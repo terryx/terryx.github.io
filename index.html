@@ -21,28 +21,94 @@
     }
 
     #content {
-      flex: 1
+      flex: 1;
+    }
+
+    section#content {
+      padding-top: 5px;
     }
   </style>
 </head>
 
 <body class="is-flex">
-  <header>
-  </header>
-  <section id="content" class="section">
-    <div class="container">
-      <h2 class="has-text-dark is-size-2">Apps</h2>
+  <header id="header"></header>
+  <div class="container">
+    <section id="content" class="section">
+      <h2 class="has-text-dark is-size-2 is-paddingless is-marginless">Apps</h2>
       <p>These are the apps I made for favorite past time</p>
-      <ul>
-        <li>
-          <a href="https://github.com/terryx/kms-encyptor" target="_blank">KMS Encyptor</a>
-        </li>
-        <li>
-          <a href="https://github.com/terryx/image-resizer" target="_blank">Image Resizer</a>
-        </li>
-      </ul>
-    </div>
-  </section>
+      <br />
+      <div class="columns">
+        <div class="column">
+
+          <!-- Begin Gitlazy -->
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Gitlazy</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Git shortcut command for lazy people
+              </div>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+              <a href="https://github.com/terryx/gitlazy" target="_blank">Source code</a>
+            </span>
+              </p>
+            </footer>
+          </div>
+          <!-- End Gitlazy -->
+
+          <br />
+
+          <!-- Begin KMS Encryptor -->
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">KMS Encryptor</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                A simple desktop tool to encrypt and decrypt KMS key without remembering long CLI command. PS: It's a typo for the app name.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+              <a href="https://github.com/terryx/kms-encyptor" target="_blank">Source code</a>
+            </span>
+              </p>
+            </footer>
+          </div>
+          <!-- End KMS Encryptor -->
+        </div>
+
+        <div class="column">
+
+          <!-- Begin Image Resizer -->
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Image Resizer</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                A desktop app for resizing original images into various sizes and formats.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+              <a href="https://github.com/terryx/image-resizer" target="_blank">Source code</a>
+            </span>
+              </p>
+            </footer>
+          </div>
+          <!-- End Image Resizer -->
+
+        </div>
+      </div>
+    </section>
+  </div>
   <footer class="footer">
     <div id="footer-container" class="container">
       <div class="content has-text-centered">
@@ -61,7 +127,7 @@
       height: window.innerHeight / 3
     });
 
-    $('header').append(pattern.canvas())
+    $('#header').append(pattern.canvas())
 
     $(window).resize(function(event) {
       var innerWidth = event.target.innerWidth
@@ -72,7 +138,7 @@
         height: innerHeight / 3
       });
 
-      $('header').html(pattern.canvas())
+      $('#header').html(pattern.canvas())
 
     })
   </script>

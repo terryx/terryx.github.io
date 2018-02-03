@@ -1,5 +1,5 @@
 ## Hello World
-> My name is Terry Yuen, I'm a JavaScript enthusiast. A Generalist programmer who loves data, frontend, backend and system administration.
+> My name is Terry Yuen, I'm a JavaScript enthusiast. Generalist programmer who loves data, frontend, backend and system administration.
 
 ### More about me
 ---

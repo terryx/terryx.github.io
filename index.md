@@ -8,6 +8,11 @@
 
 ### Things that I've made
 ---
+#### Cryptocurrency streams
+Stream public market data from cryptocurrency exchange such as GDAX and OKEX with RxJS.
+Source [code](https://github.com/terryx/crypto-streams)
+
+---
 #### GDAX Telegram Bot
 A simple configurable notification system about GDAX exchange cryptocurrency trades. Source [code](https://github.com/terryx/gdax-notifications)
 

@@ -10,7 +10,7 @@
 ---
 #### Cryptocurrency streams
 Stream public market data from cryptocurrency exchange such as GDAX and OKEX with RxJS.
-Source [code](https://github.com/terryx/crypto-streams)
+Source [code](https://github.com/terryx/crypto-streams)(:target="_blank")
 
 ---
 #### GDAX Telegram Bot

@@ -526,7 +526,7 @@ if ('development' !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":34}],55:[function(require,module,exports) {
+},{"./emptyFunction":34}],43:[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -600,7 +600,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-},{"fbjs/lib/invariant":32,"fbjs/lib/warning":35,"./lib/ReactPropTypesSecret":55}],16:[function(require,module,exports) {
+},{"fbjs/lib/invariant":32,"fbjs/lib/warning":35,"./lib/ReactPropTypesSecret":43}],16:[function(require,module,exports) {
 /** @license React v16.3.2
  * react.development.js
  *
@@ -2154,7 +2154,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],59:[function(require,module,exports) {
+},{}],47:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2177,7 +2177,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],56:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2200,7 +2200,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":59}],40:[function(require,module,exports) {
+},{"./isNode":47}],40:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2238,7 +2238,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":56}],17:[function(require,module,exports) {
+},{"./isTextNode":44}],17:[function(require,module,exports) {
 /** @license React v16.3.2
  * react-dom.production.min.js
  *
@@ -2486,7 +2486,7 @@ var Gg={createPortal:Fg,findDOMNode:function(a){return null==a?null:1===a.nodeTy
 null})}),!0):!1},unstable_createPortal:function(){return Fg.apply(void 0,arguments)},unstable_batchedUpdates:X.batchedUpdates,unstable_deferredUpdates:X.deferredUpdates,flushSync:X.flushSync,unstable_flushControlled:X.flushControlled,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{EventPluginHub:Ra,EventPluginRegistry:Ca,EventPropagators:kb,ReactControlledComponent:$b,ReactDOMComponentTree:bb,ReactDOMEventListener:$d},unstable_createRoot:function(a,b){return new tg(a,!0,null!=b&&!0===b.hydrate)}};
 X.injectIntoDevTools({findFiberByHostInstance:Ua,bundleType:0,version:"16.3.2",rendererPackageName:"react-dom"});var Hg=Object.freeze({default:Gg}),Ig=Hg&&Gg||Hg;module.exports=Ig["default"]?Ig["default"]:Ig;
 
-},{"fbjs/lib/invariant":32,"react":8,"fbjs/lib/ExecutionEnvironment":37,"object-assign":31,"fbjs/lib/emptyFunction":34,"fbjs/lib/getActiveElement":38,"fbjs/lib/shallowEqual":39,"fbjs/lib/containsNode":40,"fbjs/lib/emptyObject":33}],58:[function(require,module,exports) {
+},{"fbjs/lib/invariant":32,"react":8,"fbjs/lib/ExecutionEnvironment":37,"object-assign":31,"fbjs/lib/emptyFunction":34,"fbjs/lib/getActiveElement":38,"fbjs/lib/shallowEqual":39,"fbjs/lib/containsNode":40,"fbjs/lib/emptyObject":33}],45:[function(require,module,exports) {
 'use strict';
 
 /**
@@ -2554,7 +2554,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":58}],57:[function(require,module,exports) {
+},{"./hyphenate":45}],46:[function(require,module,exports) {
 "use strict";
 
 /**
@@ -2622,7 +2622,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":57}],18:[function(require,module,exports) {
+},{"./camelize":46}],18:[function(require,module,exports) {
 /** @license React v16.3.2
  * react-dom.development.js
  *
@@ -19276,7 +19276,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.production.min.js":17,"./cjs/react-dom.development.js":18}],19:[function(require,module,exports) {
+},{"./cjs/react-dom.production.min.js":17,"./cjs/react-dom.development.js":18}],23:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19337,7 +19337,7 @@ var Intro = function Intro() {
 };
 
 exports.default = Intro;
-},{"react":8}],20:[function(require,module,exports) {
+},{"react":8}],24:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -19388,13 +19388,17 @@ var Card = function Card(_ref) {
 };
 
 exports.default = Card;
-},{"react":8}],23:[function(require,module,exports) {
+},{"react":8}],25:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = [{
+  name: 'Rainy Bot',
+  link: 'https://github.com/terryx/rainybot',
+  description: 'Rainy is a telegram bot know\'s everything about Singapore weather.'
+}, {
   name: 'Serverless News Feeder',
   link: 'https://github.com/terryx/serverless-news-feeder',
   description: 'Personalized news feeder using serverless and AWS lambda. This service gives you news update via Telegram.'
@@ -19504,7 +19508,7 @@ var Main = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Main;
-},{"react":8,"../components/Intro":19,"../components/Card":20,"../data/projects":23}],3:[function(require,module,exports) {
+},{"react":8,"../components/Intro":23,"../components/Card":24,"../data/projects":25}],3:[function(require,module,exports) {
 'use strict';
 
 require('bulma/css/bulma.css');
@@ -19527,7 +19531,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mountNode = document.getElementById('app');
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), mountNode);
-},{"bulma/css/bulma.css":7,"./css/style.css":5,"react":8,"react-dom":9,"./containers/App":6}],60:[function(require,module,exports) {
+},{"bulma/css/bulma.css":7,"./css/style.css":5,"react":8,"react-dom":9,"./containers/App":6}],48:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -19557,7 +19561,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63097' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51078' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -19696,5 +19700,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[60,3])
+},{}]},{},[48,3])
 //# sourceMappingURL=/src.c3f95e0c.map

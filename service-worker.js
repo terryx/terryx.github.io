@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.6b61e91dd92efce86aa5569803c30d38.js"
+  "/precache-manifest.929aa10afbaa9afa270ce7476729925f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "investment-insight"});
